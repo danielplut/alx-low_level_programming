@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - this is the main function
+ * main - using puts
  *
  * Return: always 0
- */
+ **/
 
 int main(void)
 { 
