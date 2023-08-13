@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
  * main - this is printf
- *
  * Return: 0 always
- * */
+ */
 
 int main(void)
 {
