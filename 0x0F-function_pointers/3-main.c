@@ -7,7 +7,7 @@
  * @argv: array of pointers to the arguments
  * Return: always 0
  */
-int main(int __attibute__(__unused__) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
@@ -18,7 +18,7 @@ int main(int __attibute__(__unused__) argc, char *argv[])
 		exit(98);
 	}
 	num1 = atoi(argv[1]);
-	op = argv[2];
+	op = (argv[2]);
 	num2 = atoi(argv[3]);
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
