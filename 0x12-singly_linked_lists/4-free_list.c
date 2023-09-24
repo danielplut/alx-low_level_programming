@@ -2,6 +2,7 @@
 /**
  * free_lsit - fress a list
  * @head: head of list
+ * Description: frees a list_t list
  * Return: always 0
  */
 void free_list(list_t *head)
