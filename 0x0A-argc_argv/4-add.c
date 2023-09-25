@@ -1,19 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
- * main -multiplies two numbers
+ * main - adds two numbers
  * @argc: number of command line argument
  * @argv: array that contains the command line argument
  * Return: always 0
  */
 int main(int argc, char *argv[])
 {
-        if (argc != 3)
-        {
-                printf("Error\n");
-                return (1);
-        }
-        printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
-        return (0);
+	int i, j, add = 0;
+
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		add += atoi(argv[i]);
+	}
+	printf("%d\n", add);
+	return (0);
 }
 
